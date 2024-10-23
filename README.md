@@ -6,3 +6,15 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+-------------------------------------------------------------------
+
+**Implementar carrito de compras para el sitio de guitarras:**
+
+**funcionalidades de agregar, eliminar y actualizar cantidades.**
+
+**Persistencia del carrito usando localStorage.**
+
+-------------------------------------------------------------------
+
