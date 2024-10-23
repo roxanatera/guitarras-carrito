@@ -1,13 +1,7 @@
-import { useMemo } from "react";
-
-export default function Header({ cart, removeFromCart, increaseQuantity, decrementQuantity, clearCart }) {
+import { useCart } from "../../hooks/useCart";
+export default function Header({ cart, removeFromCart, increaseQuantity, decrementQuantity, clearCart, isEmpty, cartTotal }) {
   // Estado derivado
-  const isEmpty = useMemo(() => cart.length === 0, [cart]);
-  const cartTotal = useMemo(
-    () => cart.reduce((total, item) => total + item.quantity * item.price, 0),
-    [cart]
-  );
-
+  
   return (
     <header className="py-5 header">
       <div className="container-xl">
@@ -50,7 +44,7 @@ export default function Header({ cart, removeFromCart, increaseQuantity, decreme
                             <td>
                               <img
                                 className="img-fluid"
-                                src={`./img/${guitar.image}.jpg`} // Asegúrate que la propiedad 'image' exista en el objeto 'guitar'
+                                src={`./img/${guitar.image}.jpg`} 
                                 alt={`imagen de ${guitar.name}`}
                               />
                             </td>
